@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>----Second Day woring it</h1>
+    <h1>---Condition Statment-----</h1>
+    <hr />
+    {% if Category == 'Student' %}
+    <h1>Student Details</h1>
+    <h1>Name : {{Name}}</h1>
+    <h1>Course : {{Course}}</h1>
+    <h1>Specification : {{Specification}}</h1>
+    {% elif Category == 'Employee' %}
+
+    <h1>Employee Details</h1>
+    <h1>Name : {{Name}}</h1>
+    <h1>Salare : {{Salare}}</h1>
+    {% else %}
+    <h1>Category not Match</h1>
+    {% endif %}
+    <br />
+    <hr />
+    <h1>------Looping Statement----</h1>
+    {% for num in Number %}
+    <h1>{{num}}</h1>
+    {% endfor %}
+  </body>
+</html>
