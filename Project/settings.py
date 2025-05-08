@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'first_day',
     'second_day',
     'three_day',
+    'fourth_day',
 ]
 
 MIDDLEWARE = [
