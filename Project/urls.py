@@ -22,4 +22,5 @@ urlpatterns = [
     path('firstday/',include('first_day.urls')),
     path('secondday/',include('second_day.urls')),
     path('threeday/',include('three_day.urls')),
+    path('fourthday/',include('fourth_day.urls')),
 ]
