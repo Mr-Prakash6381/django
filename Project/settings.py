@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'second_day',
     'three_day',
     'fourth_day',
+    'fifth_day',
 ]
 
 MIDDLEWARE = [
@@ -52,7 +53,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+ 
 ROOT_URLCONF = 'Project.urls'
 
 TEMPLATES = [
