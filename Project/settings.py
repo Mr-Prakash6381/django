@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'three_day',
     'fourth_day',
     'fifth_day',
+    'sixth_day',
 ]
 
 MIDDLEWARE = [
