@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendering data</title>
+    <style>
+        table,thead,tbody,td,th{
+            border: 1px solid rgb(43, 21, 21);
+            border-collapse: collapse;
+            padding: 15px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Rendering Data</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Student_id</th>
+          <th>Student_Name</th>
+          <th>Student_Course</th>
+          <th>Student_Deprt</th>
+          <th>Update</th>
+          <th>Delect</th>
+
+        </tr>
+        <tbody>
+            {% for data in all_student %}
+            <tr>
+                <td>{{data.Student_id}}</td>
+                <td>{{data.Student_Name}}</td>
+                <td>{{data.Student_Deprt}}</td>
+                <td>{{data.Student_Course}}</td>
+                <td><a href="{% url 'update_item' data.Student.id %}"><button>Update</button></a></td>
+                <td><a href="{% url 'delete_item' data.Student.id %}"><button>Delect</button></a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </thead>
+    </table>
+  </body>
+</html>
