@@ -25,5 +25,6 @@ urlpatterns = [
     path('fourthday/',include('fourth_day.urls')),
     path('fifthday/',include('fifth_day.urls')),
     path('sixthday/',include('sixth_day.urls')),
-    path('seventhday/',include('seventh_day.urls'))
+    path('seventhday/',include('seventh_day.urls')),
+    path('eigthday/',include('eighth_day.urls'))
 ]
