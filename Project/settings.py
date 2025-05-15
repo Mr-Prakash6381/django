@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'fifth_day',
     'sixth_day',
     'seventh_day',
+    'eighth_day',
 ]
 
 MIDDLEWARE = [
@@ -81,8 +82,12 @@ WSGI_APPLICATION = 'Project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':'django',
+        'USER':'root',
+        'PASSWORD':'admin@123',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
 
@@ -127,4 +132,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
